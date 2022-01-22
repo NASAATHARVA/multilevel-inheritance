@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class A{
+    public:
+    A(){
+  cout<<"I am parent";
+    }
+
+};
+class B{
+    public:
+
+    B() 
+    {
+  
+  cout<<"I am child";
+  }
+
+};
+
+class C:public A,public B
+{
+  public:
+   C()
+    {
+      cout<<"Multilevel ";
+    }
+};
+int main(){
+  C obj;
+    
+}
